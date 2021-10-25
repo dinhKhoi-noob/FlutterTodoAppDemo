@@ -3,4 +3,9 @@ import './basic_layout_example.dart';
 // import './external_library_example.dart';
 // import './stateful_widget_example.dart';
 
-void main() => runApp(const BasicLayoutExample());
+// ignore: prefer_const_constructors
+void main() {
+  final _globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
+  return runApp(MaterialApp(home: const BasicLayoutExample(),scaffoldMessengerKey: _globalMessengerKey));
+}
+
