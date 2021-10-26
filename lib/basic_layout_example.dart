@@ -18,7 +18,7 @@ class _BasicLayoutExample extends State<BasicLayoutExample> {
   Future<void> _showEmailModal(BuildContext context) async {
     return await showDialog(
         context: context,
-        builder: (context) {
+        builder: (context) {  
           return AlertDialog(
             title: const Text("Email dialog"),
             shape: const RoundedRectangleBorder(
